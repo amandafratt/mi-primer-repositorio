@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs amb text</title>
+</head>
+<body>
+    
+    <h1>Inputs amb text</h1>
+    <a href="index.html">ANAR AL ÍNDEX</a>
+    <p>És el tipus d'input per defecte. Si no poseu cap atribut type en un input, tindreu un input de tipus text.</p>
+
+    <h2>Atributs habituals</h2>
+    <ul>
+        <li><h3>Atribut name</h3></li>
+        <form> Name
+            <input type="text" name="name">
+        </form>
+        <form> Surname
+            <input type="text" name="surname">
+        </form>
+
+        <li><h3>Atribut maxlenght</h3></li>
+        <p>Per limitar el nombre de caràcters que un usuari pot introduir en un camp de text (en aquest cas 7).</p>
+        <form>
+            <input type="text" maxlength="7">
+        </form>
+
+        <li><h3>Atribut size</h3></li>
+        <p>Per indicar l'amplasa de l'entrada del text. Aquest atribut no s'hauria d'utiltzar.</p>
+        <form>
+            <input type="text" maxlength="4" size="30">
+        </form>
+
+        <li><h3>Atribut value</h3></li>
+        <p>Per establir un valor predeterminat en un camp d'entrada de text HTML. Quan es carrega una pàgina web que conté un atrbut value definit, el valor especificat es mostrarà automàticament en el camp.</p>
+        <form>
+            <input type="text" value="2021" maxlength="4" size="25">
+        </form>
+
+        <li><h3>Placeholder</h3></li>
+        <p>Guiar a l'usuari perque posin allò que desitgem. Es pinten amb un color més fluixet i desapareix quan posem la nostra resposta</p>
+        <div>
+            <input type="text" id="email" name="email work" placeholder="Posa aquí el teu correu electrònic de l'escola" size="60">
+        </div>
+
+        <li><h3>Pattern</h3></li>
+        <p>Aquest atribut va acompanyat d'una expressió regular o regex. Immpedeix posar qualsevol text que no sigui el que hem posat en l'expressió regular.</p>
+        <form>
+            <div>
+                <label for="birthday_year">Any de naixement</label>
+            </div>
+            <div>
+                <input type="text" id="birthday_year" name="birthday_year" pattern="^[1-9][0-9]{3}$" [12][0123456789] size="40">
+            </div>
+            <div>
+                <button>Enviar</button>
+            </div>
+        </form>
+
+        <li><h3>Required</h3></li>
+        <p>Aquest atribut fa que la casella s'hagi d'omplir obligatoriament.</p>
+        <form>
+            <div>
+                <label for="birthday_year">Any de naixement</label>
+            </div>
+            <div>
+                <input type="text" id="birthday_year" name="birthday_year" required
+                size="40">
+            </div>
+            <div>
+                <button>Enviar</button>
+            </div>
+        </form>
+
+    </ul>
+
+</body>
+</html>

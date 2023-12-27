@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviament get vs post</title>
+</head>
+<body>
+    <h1>Enviament  Get vs Post</h1>
+    <a href="index.html">ANAR AL ÍNDEX</a>
+
+    <h2>Metode get</h2>
+    <p>És el métode d'entrada a pàgines web quan nosaltres hi entrem a través de la url. Poseu l'atribut action amb el valor "enviar html" i l'atribut method amb e valor get.</p>
+
+    <h3>Sense atribut name</h3>
+    <form action="enviar.html" method="get">
+        <label for="name">Nom</label>
+        <input type="text" id="name">
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname">
+        <input type="submit">
+    </form>
+
+    <p>Quan no existeix el fitxer que posem a l'action ens retorna un error "Cannot GET /enviar.html</p>
+    <p>Malgrat posem el nom i cognom als camps res no s'envia, perque en la url després del signe d'interrogació no hi ha cap informació.</p>
+
+    <h3>Amb atribut name</h3>
+    <form action="enviar.html" method="get">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="nom">
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname" name="cognom">
+        <input type="submit">
+    </form>
+    <p>Amb els atributs name emplenats podem veure que a la url apareixen esl camps: http://127.0.0.1:5500/enviar.html?nom=amanda&cognom=frattini</p>
+
+    <h2>Metode post</h2>
+    <p>És un enviament del formulari per la porta del darrera. L'error 405 que surt significa que ha intentat enviar les dades però aquestes dades no han arribat al destí.</p>
+
+    <form action="enviar.html" method="post">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="nom">
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname" name="cognom">
+        <input type="submit">
+    </form>
+    <p>Quan estem en la pagina d'error li donem a inspeccionar, amb aquesta pàgina oberta tornem enrrere i tornem a enviar. Després anem a la pestanya network, li donem al name i dind d'aquest a enviar.html. Quan es obrin 4 noves pestanyes li donem a payload.Si treiem els "name" no ens sortirà el payload.</p>
+</body>
+</html>

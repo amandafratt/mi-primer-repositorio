@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Més elements</title>
+</head>
+<body>
+    <h1>Més elements dels formularis</h1>
+    <a href="index.html">ANAR AL ÍNDEX</a>
+
+    <h2>Etiqueta fieldset</h2>
+    <p>S'utilitza per agrupar elements dins d'un formulari. Té etiqueta d'inici i de tancament. Sovint va acompanyada de l'etiqueta legend que permet posar un nom al contingut del fieldset.</p>
+
+    <form>
+        <fieldset>
+            <legend>Dades personals</legend>
+            <label for="name">Nom</label>
+            <input type="text" id="name">
+            <label for="surname">Cognom</label>
+            <input type="text" id="surname">
+        </fieldset>
+    </form>
+
+    <h2>Input de tipus file</h2>
+    <p>Serveix per afegir un fitxer i enviarlo</p>
+
+    <from>
+        <fieldset>
+            <legend>Dades personals</legend>
+            <label for="name">Nom</label>
+            <input type="text" id="name">
+            <label for="surname">Cognom</label>
+            <input type="text" id="surname">
+            <br><label for="photo">Puja la teva foto</label>
+            <br><input type="file" name="photo" id="photo">
+        </fieldset>
+    </from>
+
+    <h2>Etiqueta Meter</h2>
+    <p>A part de l'atribut indispensable value, porta atributs min, max, low, high i optimum.</p>
+
+    <form>
+        <label for="fuel">Combustible</label>
+        <meter id="fuel" min="0" max="100" value="90" low="30" high="75" optimum="75"></meter>
+    </form>
+
+    <h2>Etiqueta progress</h2>
+    <p>Porta els atributs value i max. Crea una barra de progrés en funció dels atribts value i max. Té etiqueta d'obertura i de tancament</p>
+
+    <form>
+        <label for="task">Tasca 1</label>
+        <progress id="task_1" max="100" value="90"></progress>
+        <label for="task">Tasca 2</label>
+        <progress id="task_2" max="200" value="90"></progress>
+    </form>
+    <p>Una bona pràctica es treballar amb percentatges. Dues barres: una amb máx 100 i l'altra amb máx 200, tenen la mateixa longitud</p>
+
+    <h2>Etiqueta textarea</h2>
+    <p>Porta ela atributs cols i rows amb valors numèrics</p>
+
+    <form>
+        <label>Escriu</label> <textarea cols="60" rows="10"></textarea>
+    </form>
+
+    
+</body>
+</html>

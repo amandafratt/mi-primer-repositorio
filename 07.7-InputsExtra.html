@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs extra</title>
+</head>
+<body>
+    
+    <h1>Inputs Extra</h1>
+    <a href="index.html">ANAR AL ÍNDEX</a>
+    <p>Mirarem un grup d'inputs que no tenen una classificació fàcil</p>
+
+    <h2>Input de tipus color</h2>
+    <p>Ens permet triar un color en una paleta de colors. Si fem una pàgina on l'usuari hagi d'escollir un color per algun item en concret o el color de fons d'una pàgina us anirà molt bé</p>
+    <form>
+        <input type="color">
+    </form>
+
+    <h2>Input de tipus number</h2>
+    <p>Hem d'evitar posar dates en ell. Les petites fletxes que hi surten pwe entrar dades es diuen widgets.</p>
+    <form> Quants anys tens?
+        <input type="number">
+    </form>
+    <p>Es poden bloquejar números</p>
+
+    <h2>Input de tipus range</h2>
+    <p>Ens pinta una barra que podem modificar per seleccionar un valor. Accepta l'atribut step que determina de quant en quant es mou la nostra barra. També té l'atribut min i max</p>
+    <form>
+        <input type="range">
+    </form>
+
+    <h3>Atribut step</h3>
+    <form>
+        <input type="range" step="20">
+    </form>
+    <p>Aquesta barra va del 0 al 100 i va de 20 en 20</p>
+
+    <h3>Atribut min i max</h3>
+    <form>
+        <input type="range" step="10" min="0" max="30">
+    </form>
+    <p>Aquesta barra va del 0 al 30 i va de 10 en 10</p>
+
+    <h2>Input de tipus reset</h2>
+    <p>Es crea un botó que restableix tots els camps del formulari.</p>
+    <form>
+        <label>Nom</label>
+        <input>
+        <button>Enviar formulari</button>
+        <input type="reset">
+    </form>
+
+</body>
+</html>

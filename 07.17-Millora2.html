@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <h1>Formulari de dades</h1>
+        <h2>Emplena el formulari següent amb les teves dades personals.</h2>
+
+     <h3>Nom, cognom i adreça</h3>
+        <fieldset>
+        <label for="name">Nom</label>
+        <input id="name" name="name" required>
+        <label for="surname">Cognom</label>
+        <input id="surname" name="surname" required> <br> 
+        <label for="adress">Adreça</label>
+        <input id="adress" name="adress" required>
+        </fieldset>
+
+     <h3>Génere i estat civil</h3>
+     <u>Génere:</u>
+        <div>
+        <label> Masculí </label>
+        <input type="radio" name="genere" value="masculí" required> <br>
+        <label> Femení </label>
+        <input type="radio" name="genere" value="femení"> <br>
+        <label> No binari </label>
+        <input type="radio" name="genere" value="no_binari">
+        </div>
+    
+     <u>Estat civil:</u>
+        <input type="text" value="Solter" required>
+
+     <h3>Data de naixement</h3>
+        <input type="date" required>
+
+     <h3>Adreça electrònica</h3>
+        <label>Posa el teu correu electrònic personal:</label>
+        <input type="text" id="email" name="personal email" required>
+
+     <h3>Número de teléfon</h3>
+        <div>
+            <label for="telèfon">Telèfon</label>
+        </div>
+        <div>
+            <input type="text" id="telefon" name="telefon" maxlength= "9" required pattern="[0-9]{9}">
+        </div>
+
+     <h3>Xarxes socials</h3>
+        <label>Compte d'instagram</label>
+        <input type="text" id="instagram" placeholder="@..." required pattern="^@ .">
+        <label>Compte de twitter</label>
+        <input type="text" id="twitter" placeholder="@..."required pattern="^@.">
+
+     <h3>Posició al camp</h3>
+     Quines posició/ns prefereixes? <br>
+     <label for="positions">Tria el llenguatges web que controles</label>
+     <select name="posicions" id="posicions" required>
+         <option value="defensa">Defensa</option>
+         <option value="central">Central</option>
+         <option value="lateral">Lateral</option>
+         <option value="extrem">Extrem</option>
+         <option value="davanter">Davater</option>
+         <option value="porter">Porter</option>
+     </select> <br>
+
+     <h3>Fotografia</h3>
+        <label for="photo">Puja aquí la teva foto de carnet:</label> <br>
+        <input type="file" name="photo" id="photo" required>
+
+     <h3>Color pel teu armariet del vestidor</h3>
+     Tria el color que més t'agradi:
+        <input required type="color">
+
+     <h3>Viatge final de temporada</h3>
+     Quina setmana de l'any prefereixes per el viatge de final de temporada? <br>
+        <input type="week" required><br>
+
+     <p>Gràcies per emplenar el formulari.</p>
+     <div>
+        <button>Enviar el formulari</button>
+     </div>
+    </form>
+</body>
+</htm

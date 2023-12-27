@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de dades</title>
+</head>
+<body>
+    <h1>Formulari de dades</h1>
+    <p>Emplena el formulari seguent amb les teves dades personals.</p>
+
+    <h3>Nom, cognom i adreça</h3>
+    <form>
+        <label for="name">Nom</label>
+        <input id="name">
+        <label for="surname">Cognom</label>
+        <input id="surname"> <br> <br>
+        <label for="adress">Adreça</label>
+        <input id="adress">
+        <button>Enviar formulari</button>
+    </form>
+
+    <h3>Génere i estat civil</h3>
+    <form> Génere:
+        <label> Masculí
+            <input type="radio">
+        </label>
+        <label> Femení
+            <input type="radio">
+        </label>
+        <label> No binari
+            <input type="radio">
+        </label>
+        <button>Enviar</button>
+    </form>
+    
+    <form> Estat civil
+        <input type="text" value="Solter">
+        <button>Enviar</button>
+    </form>
+
+    <h3>Data de naixement</h3>
+    <form>
+        <input type="date">
+        <button>Enviar</button>
+    </form>
+
+    <h3>Adreça electrònica</h3>
+    <input type="text" id="email" name="personal email" placeholder="Posa aquí el teu correu electrònic personal" size="50">
+    <button>Enviar</button>
+
+    <h3>Número de teléfon</h3>
+    <form>
+        <div>
+            <label for="telèfon">Telèfon</label>
+        </div>
+        <div>
+            <input type="text" id="telefon" name="telefon" maxlength= "9" pattern="^[1-9][0-9]" [12][0123456789]>
+        </div>
+        <div>
+            <button>Enviar</button>
+        </div>
+    </form>
+
+</body>
+</html>
