@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Audio</title>
+</head>
+<body>
+    <h1>Etiqueta Audio</h1>
+
+    <p>L'element HTML audio ens permet  posar audio en les nostres webs. Generalment, posarem els nostres audios en una subcarpeta anomenada "audio" dins de la carpeta assets.</p>
+
+    <h2>Etiqueta audio i atribut src</h2>
+    <p>L'element HTML audio porta dues etiquetes audio, una d'oberta i una altra de tancament. També porta un atribut src com les imatges.</p>
+
+    <audio src="/assets/Àudio/random-acoustic-electronic-guitar-136427.mp3"></audio>
+
+    <p>Si posem només les etiquetes audio i src, no funcionarà res.</p>
+
+    <h2>Atribut controls</h2>
+    <p>L'atribut control és un atribut booleà. Quan el posem, de seguida ens apareixerà els controls per engegar o parar la reproducció, volum, la barra de temps o tres botons per poder baixar la cançó o reproduir-la a velocitat diferent.</p>
+
+    <audio src="/assets/Àudio/random-acoustic-electronic-guitar-136427.mp3" controls></audio>
+
+    <h2>Atribut autoplay</h2>
+
+    <audio src="/assets/Àudio/random-acoustic-electronic-guitar-136427.mp3" controls autoplay></audio>
+
+    <p>Actualment, hi ha molts servidors que desactiven el autoplay. En local, us funcionarà però quan ho puegeu a un servidor segurament us fallarà</p>
+
+    <h2>Atribut muted</h2>
+
+    <audio src="/assets/Àudio/random-acoustic-electronic-guitar-136427.mp3" controls autoplay muted></audio>
+
+    <p>En Instagram, podeu tenir els videos reproduint-se a mesura que feu scroll-down però l'àudio no s'escolta.</p>
+
+    <h2>Atribut loop</h2>
+
+    <audio src="/assets/Àudio/random-acoustic-electronic-guitar-136427.mp3" controls autoplay loop></audio>
+
+    <p>Si voleu que l'àudio no pari de sonar</p>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta video</title>
+</head>
+<body>
+    <h1>Etiqueta vídeo</h1>
+    <p>L'element HTML vídeo funciona de manera molt similar a l'element HTML audio. Generalment, posarem els nostres vídeos en una subcarpeta anomenada "vídeo" dins de la carpeta assets.</p>
+
+    <h2>Etiqueta vídeo i atribut src</h2>
+    <video src="/assets/vídeos/pexels_videos_4513 (1080p).mp4"></video>
+    <p>Així no funciona</p>
+
+    <h2>Atribut controls</h2>
+    <video src="/assets/vídeos/pexels_videos_4513 (1080p).mp4" controls></video>
+    <p>Així sí</p>
+
+    <h2>Atribut poster</h2>
+    <video src="/assets/vídeos/pexels_videos_4513 (1080p).mp4" controls poster="/assets/Imatges/dog.jpg"></video>
+
+    <p>Atribut que no té l'etiqueta àudio perquè aquest atribut apunta una imatge que surt abans de que es cliqui play al vídeo</p>
+
+    <h2>Atribut autoplay</h2>
+    <video src="/assets/vídeos/pexels_videos_4513 (1080p).mp4" controls autoplay></video>
+
+    <h2>Atribut muted</h2>
+    <video src="/assets/vídeos/pexels_videos_4513 (1080p).mp4" controls muted></video>
+
+    <h2>Atributs height i width</h2>
+    <video src="/assets/vídeos/pexels_videos_4513 (1080p).mp4" controls height="100" width="200"></video>
+</body>
+</html>
