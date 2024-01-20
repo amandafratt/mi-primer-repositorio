@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibilitat en la Web</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1 tabindex="0">ACCESSIBILITAT EN LA WEB</h1>
+<a href="index.html">ANAR AL ÍNDEX</a>
+
+<p tabindex="0">L'accessibilitat en una pàgina web és crucial per assegurar-se que tothom pugui accedir i interactuar amb el contingut de manera efectiva...</p>
+
+<h2 tabindex="0">Exemples d'Accessibilitat:</h2>
+
+<ul>
+<li tabindex="0">Utilització correcta de les etiquetes HTML semàntiques.</li>
+<li tabindex="0">Imatges amb atributs "alt" descriptius.</li>
+<li tabindex="0">Ús de tabindex per gestionar l'ordre de focus.</li>
+<li tabindex="0">Fonts lliures de serifs i amb un contrast adequat.</li>
+<li tabindex="0">Compatibilitat amb lectors de pantalla.</li>
+</ul>
+
+<h2 tabindex="0">Activar la Lectura en Veu Alta a Windows 10:</h2>
+<p tabindex="0">1. Premeu la tecla Windows + Control + Enter per activar la funció de Lectura en Veu Alta.</p>
+<p tabindex="0">2. Ajusteu la configuració a través de les opcions d'accessibilitat a la configuració del sistema.</p>
+
+<h2 tabindex="0">Activar la Lectura en Veu Alta a Google Chrome:</h2>
+<p tabindex="0">1. Premeu la tecla Alt + Shift + A per activar la funció de Lectura en Veu Alta a Chrome.</p>
+<p tabindex="0">2. Utilitzeu la tecla TAB per navegar entre els elements de la pàgina mentre la Lectura en Veu Alta està activada.</p>
+
+<h2 tabindex="0">Elements per Millorar l'Accessibilitat</h2>
+
+<p tabindex="0">L'accessibilitat en la web és crucial per a tots els usuaris, incloent aquells amb discapacitats. Aquí tens una llista d'elements importants per millorar l'accessibilitat:</p>
+
+<ol>
+<li tabindex="0">
+<strong>Imatges amb l'atribut `alt`:</strong><br>
+<code>&lt;img src="imatge.jpg" alt="Descripció de la imatge"&gt;</code><br>
+Proporciona una descripció de la imatge per als lectors de pantalla i en cas que la imatge no es pugui carregar.
+</li>
+
+<li tabindex="0">
+<strong>Enllaços amb `aria-label`:</strong><br>
+<code>&lt;a href="#" aria-label="Anar a la pàgina d'inici"&gt;Inici&lt;/a&gt;</code><br>
+Descriu la funcionalitat de l'enllaç per als lectors de pantalla.
+</li>
+
+<li tabindex="0">
+<strong>Botons amb `aria-label`:</strong><br>
+<code>&lt;button aria-label="Obre el menú"&gt;☰&lt;/button&gt;</code><br>
+Proporciona una etiqueta lletra per descriure la funcionalitat del botó.
+</li>
+
+<li tabindex="0">
+<strong>Elements amb `aria-labelledby`:</strong><br>
+<code>&lt;div id="seccio1"&gt;Secció 1&lt;/div&gt;<br>
+&lt;div aria-labelledby="seccio1"&gt;Contingut de la Secció 1&lt;/div&gt;</code><br>
+Associa un element amb una etiqueta lletra identificada per un identificador específic.
+</li>
+
+<li tabindex="0">
+<strong>Elements amb `aria-describedby`:</strong><br>
+<code>&lt;input type="text" aria-describedby="instruccions"&gt;<br>
+&lt;div id="instruccions"&gt;Introdueix la teva informació aquí&lt;/div&gt;</code><br>
+Associa un element amb una descripció addicional.
+</li>
+
+<li tabindex="0">
+<strong>Elements amb l'atribut `role`:</strong><br>
+<code>&lt;nav role="navigation"&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;</code><br>
+Especifica la funció d'un element, com ara `navigation`, `button`, `list`, etc.
+</li>
+
+<li tabindex="0">
+<strong>Elements amb `aria-hidden`:</strong><br>
+<code>&lt;div aria-hidden="true"&gt;Aquest element no és visible per als lectors de pantalla&lt;/div&gt;</code><br>
+Oculta un element als lectors de pantalla, útil per elements purament visuals.
+</li>
+
+<li tabindex="0">
+<strong>Elements amb `tabindex`:</strong><br>
+<code>&lt;input type="text" tabindex="0"&gt;</code><br>
+Especifica l'ordre de focus quan es navega amb la tecla TAB.
+</li>
+</ol>
+
+</body>
+</html>
